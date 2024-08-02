@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>apte4ka</title>
+	<meta property="og:title" content="apte4ka">
+	<meta property="og:description" content="Описание">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="apte4ka">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="theme-color" content="#ffffff">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- auth -->
+	<div class="auth" id="auth">
+		<div class="auth__wrap auth__wrap--wide">
+			<picture class="auth__logotype">
+				<img src="img/logotype.svg" width="212.5" height="50" alt="аптечка+">
+			</picture>
+			<div class="auth__wrapper">
+				<div class="auth__top">
+					<h3 class="auth__title">Анкета программы лояльности</h3>
+					<p class="auth__description">Это анкета участника программы лояльности. Данная анкета обязательна для регистрации в личном кабинете.</p>
+				</div>
+				<form action="#" class="auth-form auth__form">
+					<div class="auth-form__switches">
+						<label for="switch-plastic-card" class="switch auth-form__switch js-input-visibility">
+							<input type="checkbox" id="switch-plastic-card" class="switch__input">
+							<div class="switch__group">
+								<span class="switch__title">Есть пластиковая карта “Аптечка”</span>
+								<span class="switch__icon"></span>
+							</div>
+						</label>
+						<div class="input-field auth-form__input is--hidden">
+							<label for="auth-plastic-card" class="input-field__label input-field__label--desktop">Номер карты</label>
+							<div class="input-field__inner">
+								<input type="text" id="auth-plastic-card" class="input-field__input" placeholder="Номер вашей карты">
+								<label for="auth-plastic-card" class="input-field__label input-field__label--mobile">Номер карты</label>
+							</div>
+							<span class="input-field__error">Карта не найдена</span>
+						</div>
+					</div>
+					<hr>
+					<div class="input-field auth-form__input">
+						<label for="auth-number" class="input-field__label input-field__label--desktop">Имя</label>
+						<div class="input-field__inner">
+							<input type="text" id="auth-number" class="input-field__input" placeholder="Обязательное поле">
+							<label for="auth-number" class="input-field__label input-field__label--mobile">Имя</label>
+						</div>
+						<span class="input-field__error">Неверное имя</span>
+					</div>
+					<div class="input-field auth-form__input">
+						<label for="auth-number" class="input-field__label input-field__label--desktop">Фамилия</label>
+						<div class="input-field__inner">
+							<input type="text" id="auth-number" class="input-field__input" placeholder="Обязательное поле">
+							<label for="auth-number" class="input-field__label input-field__label--mobile">Фамилия</label>
+						</div>
+						<span class="input-field__error">Неверная фамилия</span>
+					</div>
+					<div class="input-field auth-form__input">
+						<label for="auth-number" class="input-field__label input-field__label--desktop">Отчество</label>
+						<div class="input-field__inner">
+							<input type="text" id="auth-number" class="input-field__input" placeholder="Обязательное поле">
+							<label for="auth-number" class="input-field__label input-field__label--mobile">Отчество</label>
+						</div>
+						<span class="input-field__error">Неверное отчество</span>
+					</div>
+					<div class="input-field auth-form__input">
+						<label for="auth-number" class="input-field__label input-field__label--desktop">Пол</label>
+						<div class="input-field__select select-box">
+							<div class="select-box__placeholder">
+								<span>Обязательное поле</span>
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-caret"></use>
+								</svg>
+							</div>
+							<div class="select-box__container">
+								<div class="select-box__checkboxes">
+									<div class="select-box__checkbox">
+										<input type="radio" name="select-sex" class="select-box__input" id="select-sex-male">
+										<label for="select-sex-male" class="select-box__group">
+											<span class="select-box__title">Мужской</span>
+										</label>
+									</div>
+									<div class="square-checkbox select-box__checkbox">
+										<input type="radio" name="select-sex" class="select-box__input" id="select-sex-female">
+										<label for="select-sex-female" class="select-box__group">
+											<span class="select-box__title">Женский</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<span class="input-field__error">Неверный пол</span>
+					</div>
+					<div class="input-field auth-form__input">
+						<label for="auth-number" class="input-field__label input-field__label--desktop">Дата рождения</label>
+						<div class="input-field__inner">
+							<input type="text" id="auth-number" class="input-field__input" placeholder="Обязательное поле">
+							<label for="auth-number" class="input-field__label input-field__label--mobile">Дата рождения</label>
+						</div>
+						<span class="input-field__error">Неверная дата рождения</span>
+					</div>
+					<div class="input-field auth-form__input">
+						<label for="auth-number" class="input-field__label input-field__label--desktop">E-mail</label>
+						<div class="input-field__inner">
+							<input type="text" id="auth-number" class="input-field__input" placeholder="Обязательное поле">
+							<label for="auth-number" class="input-field__label input-field__label--mobile">E-mail</label>
+						</div>
+						<span class="input-field__error">Неверный e-mail</span>
+					</div>
+					<div class="input-field auth-form__input">
+						<label for="auth-number" class="input-field__label input-field__label--desktop">Город</label>
+						<div class="input-field__inner">
+							<input type="text" id="auth-number" class="input-field__input" placeholder="Обязательное поле">
+							<label for="auth-number" class="input-field__label input-field__label--mobile">Город</label>
+						</div>
+						<span class="input-field__error">Неверный город</span>
+					</div>
+					<div class="input-field auth-form__input">
+						<label for="auth-number" class="input-field__label input-field__label--desktop">Область</label>
+						<div class="input-field__inner">
+							<input type="text" id="auth-number" class="input-field__input" placeholder="Обязательное поле">
+							<label for="auth-number" class="input-field__label input-field__label--mobile">Область</label>
+						</div>
+						<span class="input-field__error">Неверная область</span>
+					</div>
+					<div class="auth-form__switches">
+						<label for="switch-program-card" class="switch auth-form__switch js-input-visibility">
+							<input type="checkbox" id="switch-program-card" class="switch__input">
+							<div class="switch__group">
+								<span class="switch__title">Являетесь ли вы участником программы «Социальная» от сети аптек «ADEL» и «Добрыя лекi»?</span>
+								<span class="switch__icon"></span>
+							</div>
+						</label>
+						<div class="input-field auth-form__input is--hidden">
+							<label for="auth-program-card" class="input-field__label input-field__label--desktop">Номер карты</label>
+							<div class="input-field__inner">
+								<input type="text" id="auth-program-card" class="input-field__input" placeholder="Номер вашей карты">
+								<label for="auth-program-card" class="input-field__label input-field__label--mobile">Номер карты</label>
+							</div>
+							<span class="input-field__error">Карта не найдена</span>
+						</div>
+					</div>
+					<hr>
+					<div class="auth-form__switches">
+						<label for="switch-bonus-program" class="switch auth-form__switch">
+							<input type="checkbox" id="switch-bonus-program" class="switch__input">
+							<div class="switch__group">
+								<span class="switch__title">Я ознакомлен и согласен с правилами действия <a href="#">Положения о бонусной программе лояльности «Аптечка»</a></span>
+								<span class="switch__icon"></span>
+							</div>
+						</label>
+						<label for="switch-personal-data" class="switch auth-form__switch">
+							<input type="checkbox" id="switch-personal-data" class="switch__input">
+							<div class="switch__group">
+								<span class="switch__title">Я подтверждаю согласие на обработку моих <a href="#">персональных данных</a></span>
+								<span class="switch__icon"></span>
+							</div>
+						</label>
+					</div>
+					<hr>
+					<div class="auth-form__switches">
+						<label for="switch-notification" class="switch auth-form__switch">
+							<input type="checkbox" id="switch-notification" class="switch__input">
+							<div class="switch__group">
+								<span class="switch__title">Я согласен на получение сервисных уведомлений, информации о новых товарах и специальных предложениях</span>
+								<span class="switch__icon"></span>
+							</div>
+						</label>
+					</div>
+					<div class="auth-form__checkboxes">
+						<label for="checkbox-notification-sms" class="square-checkbox auth-form__checkbox">
+							<input type="checkbox" id="checkbox-notification-sms" class="square-checkbox__input">
+							<div class="square-checkbox__group">
+								<span class="square-checkbox__icon"></span>
+								<span class="square-checkbox__title">SMS</span>
+							</div>
+						</label>
+						<label for="checkbox-notification-viber" class="square-checkbox auth-form__checkbox">
+							<input type="checkbox" id="checkbox-notification-viber" class="square-checkbox__input">
+							<div class="square-checkbox__group">
+								<span class="square-checkbox__icon"></span>
+								<span class="square-checkbox__title">Viber</span>
+							</div>
+						</label>
+						<label for="checkbox-notification-tg" class="square-checkbox auth-form__checkbox">
+							<input type="checkbox" id="checkbox-notification-tg" class="square-checkbox__input">
+							<div class="square-checkbox__group">
+								<span class="square-checkbox__icon"></span>
+								<span class="square-checkbox__title">Telegram</span>
+							</div>
+						</label>
+						<label for="checkbox-notification-email" class="square-checkbox auth-form__checkbox">
+							<input type="checkbox" id="checkbox-notification-email" class="square-checkbox__input">
+							<div class="square-checkbox__group">
+								<span class="square-checkbox__icon"></span>
+								<span class="square-checkbox__title">E-mail</span>
+							</div>
+						</label>
+						<label for="checkbox-notification-push" class="square-checkbox auth-form__checkbox">
+							<input type="checkbox" id="checkbox-notification-push" class="square-checkbox__input">
+							<div class="square-checkbox__group">
+								<span class="square-checkbox__icon"></span>
+								<span class="square-checkbox__title">Push</span>
+							</div>
+						</label>
+					</div>
+					<button class="auth-form__btn btn">Продолжить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- end of auth -->
+	<!-- scripts -->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
