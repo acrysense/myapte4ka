@@ -24,11 +24,84 @@
 
 <body>
 	<!-- header -->
-	<header class="header" id="header"></header>
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<a href="index.html" class="header__logotype">
+					<img src="img/logotype.svg" width="127.5" height="30" alt="apte4ka">
+				</a>
+				<div class="header__right">
+					<div class="c-dropdown header__dropdown">
+						<button class="c-dropdown__trigger">
+							<svg class="mobile">
+								<use xlink:href="img/sprite.svg#icon-globe"></use>
+							</svg>
+							<span>Сайты</span>
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-caret"></use>
+							</svg>
+						</button>
+						<div class="c-dropdown__container">
+							<ul class="c-dropdown__list">
+								<li class="c-dropdown__item">
+									<a href="apte4ka.by" class="c-dropdown__link">apte4ka.by</a>
+								</li>
+								<li class="c-dropdown__item">
+									<a href="apte4kaminsk.by" class="c-dropdown__link">apte4kaminsk.by</a>
+								</li>
+								<li class="c-dropdown__item">
+									<a href="apteka-adel.by" class="c-dropdown__link">apteka-adel.by</a>
+								</li>
+								<li class="c-dropdown__item">
+									<a href="d-leki.by" class="c-dropdown__link">d-leki.by</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="header__inner">
+						<div class="c-dropdown header__dropdown">
+							<button class="c-dropdown__trigger">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-notifications"></use>
+								</svg>
+								<span>Уведомления</span>
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-caret"></use>
+								</svg>
+							</button>
+							<div class="c-dropdown__container">
+								<ul class="c-dropdown__list">
+									<li class="c-dropdown__item">
+										<a href="#" class="c-dropdown__link">Уведомление 1</a>
+									</li>
+									<li class="c-dropdown__item">
+										<a href="#" class="c-dropdown__link">Уведомление 2</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="c-user header__user">
+							<div class="c-user__wrapper">
+								<picture class="c-user__img">
+									<span>АС</span>
+								</picture>
+								<span class="c-user__title">Александр Смирнов</span>
+							</div>
+						</div>
+						<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 	<!-- end of header -->
 	<!-- lk -->
 	<div class="lk" id="lk">
-		<div class="lk__container">
+		<div class="container">
 			<div class="lk__wrap">
 				<nav class="lk-nav lk__nav">
 					<ul class="lk-nav__list">
@@ -114,6 +187,69 @@
 		</div>
 	</div>
 	<!-- end of lk -->
+	<!-- menu -->
+	<div class="menu" id="menu">
+		<div class="menu__wrap">
+			<div class="menu__top">
+				<button class="menu__close" id="menu-close" aria-label="Закрыть">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+			<nav class="menu__nav">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							<span>Мои карты</span>
+							<span class="menu__value">9755</span>
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							<span>История покупок</span>
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							<span>Бонусы и скидки</span>
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							<span>Мои программы</span>
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							<span>Любимые товары</span>
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							<span>Карта аптек</span>
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							<span>Помощь</span>
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							<span>Профиль</span>
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							<span>Выход</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<!-- end of menu -->
 	<!-- scripts -->
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 	<script src="js/vendor.min.js"></script>
