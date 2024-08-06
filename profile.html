@@ -155,7 +155,156 @@
 						</li>
 					</ul>
 				</nav>
-				<div class="lk__main"></div>
+				<div class="lk__main">
+					<div class="lk-user lk__user">
+						<div class="lk-user__wrapper">
+							<picture class="lk-user__img">
+								<span>АС</span>
+							</picture>
+							<div class="lk-user__body">
+								<h3 class="lk-user__title">Александр Смирнов</h3>
+								<span class="lk-user__number">+375 (75) 775-55-75</span>
+							</div>
+						</div>
+					</div>
+					<div class="lk-profile lk__profile">
+						<div class="lk-profile__tabs"></div>
+						<form action="#" class="lk-profile-form lk-profile__form">
+							<div class="lk-profile-form__wrapper">
+								<div class="lk-profile-form__data">
+									<div class="input-field lk-profile-form__input">
+										<label for="profile-email" class="input-field__label input-field__label--desktop">E-mail</label>
+										<div class="input-field__inner">
+											<input type="text" id="profile-email" class="input-field__input" placeholder="Обязательное поле" value="bronislavovich@gmail.by" disabled>
+											<label for="profile-email" class="input-field__label input-field__label--mobile">E-mail</label>
+										</div>
+										<span class="input-field__error">Неверный e-mail</span>
+									</div>
+									<div class="input-field lk-profile-form__input">
+										<label for="profile-sex" class="input-field__label input-field__label--desktop">Пол</label>
+										<div class="input-field__inner">
+											<input type="text" id="profile-sex" class="input-field__input" placeholder="Обязательное поле" value="Мужской" disabled>
+											<label for="profile-sex" class="input-field__label input-field__label--mobile">Пол</label>
+										</div>
+										<span class="input-field__error">Неверный пол</span>
+									</div>
+									<div class="input-field lk-profile-form__input">
+										<label for="profile-name" class="input-field__label input-field__label--desktop">Дата рождения</label>
+										<div class="input-field__inner">
+											<input type="text" id="profile-name" class="input-field__input" placeholder="Обязательное поле" value="12.11.2000" disabled>
+											<label for="profile-name" class="input-field__label input-field__label--mobile">Дата рождения</label>
+										</div>
+										<span class="input-field__error">Неверная дата рождения</span>
+									</div>
+									<div class="input-field lk-profile-form__input">
+										<label for="profile-region" class="input-field__label input-field__label--desktop">Область</label>
+										<div class="input-field__inner">
+											<input type="text" id="profile-region" class="input-field__input" placeholder="Обязательное поле" value="Минск" disabled>
+											<label for="profile-region" class="input-field__label input-field__label--mobile">Область</label>
+										</div>
+										<span class="input-field__error">Неверная область</span>
+									</div>
+									<div class="input-field lk-profile-form__input">
+										<label for="profile-city" class="input-field__label input-field__label--desktop">Город</label>
+										<div class="input-field__inner">
+											<input type="text" id="profile-city" class="input-field__input" placeholder="Обязательное поле" value="Минск" disabled>
+											<label for="profile-city" class="input-field__label input-field__label--mobile">Город</label>
+										</div>
+										<span class="input-field__error">Неверный город</span>
+									</div>
+								</div>
+								<div class="lk-profile-form__inner">
+									<button class="lk-profile-form__btn btn">Сохранить</button>
+									<button class="lk-profile-form__btn btn btn--border-grey">Выйти</button>
+								</div>
+							</div>
+						</form>
+						<form action="#" class="lk-profile-form lk-profile__form">
+							<div class="lk-profile-form__wrapper">
+								<div class="lk-profile-form__data lk-profile-form__data--short">
+									<div class="input-field lk-profile-form__input">
+										<div class="input-field__inner">
+											<div class="input-field__visibility">
+												<svg class="input-field__visibility-icon input-field__visibility-icon--default">
+													<use xlink:href="img/sprite.svg#icon-eye-crossed"></use>
+												</svg>
+												<svg class="input-field__visibility-icon input-field__visibility-icon--active">
+													<use xlink:href="img/sprite.svg#icon-eye"></use>
+												</svg>
+											</div>
+											<input type="password" id="profile-password" class="input-field__input" placeholder="Пароль">
+										</div>
+										<span class="input-field__error">Неверный пароль</span>
+									</div>
+									<div class="input-field lk-profile-form__input">
+										<div class="input-field__inner">
+											<div class="input-field__visibility">
+												<svg class="input-field__visibility-icon input-field__visibility-icon--default">
+													<use xlink:href="img/sprite.svg#icon-eye-crossed"></use>
+												</svg>
+												<svg class="input-field__visibility-icon input-field__visibility-icon--active">
+													<use xlink:href="img/sprite.svg#icon-eye"></use>
+												</svg>
+											</div>
+											<input type="password" id="profile-password-again" class="input-field__input" placeholder="Пароль повторно">
+										</div>
+										<span class="input-field__error">Неверный пароль</span>
+									</div>
+								</div>
+								<div class="lk-profile-form__inner">
+									<button class="lk-profile-form__btn btn">Сохранить</button>
+									<button class="lk-profile-form__btn btn btn--border-grey">Удалить профиль</button>
+								</div>
+							</div>
+						</form>
+						<form action="#" class="lk-profile-form lk-profile__form">
+							<div class="lk-profile-form__wrapper">
+								<div class="lk-profile-form__data">
+									<div class="lk-profile-form__checkboxes">
+										<label for="checkbox-notification-sms" class="square-checkbox lk-profile-form__checkbox">
+											<input type="checkbox" id="checkbox-notification-sms" class="square-checkbox__input">
+											<div class="square-checkbox__group">
+												<span class="square-checkbox__icon"></span>
+												<span class="square-checkbox__title">SMS</span>
+											</div>
+										</label>
+										<label for="checkbox-notification-viber" class="square-checkbox lk-profile-form__checkbox">
+											<input type="checkbox" id="checkbox-notification-viber" class="square-checkbox__input">
+											<div class="square-checkbox__group">
+												<span class="square-checkbox__icon"></span>
+												<span class="square-checkbox__title">Viber</span>
+											</div>
+										</label>
+										<label for="checkbox-notification-tg" class="square-checkbox lk-profile-form__checkbox">
+											<input type="checkbox" id="checkbox-notification-tg" class="square-checkbox__input">
+											<div class="square-checkbox__group">
+												<span class="square-checkbox__icon"></span>
+												<span class="square-checkbox__title">Telegram</span>
+											</div>
+										</label>
+										<label for="checkbox-notification-email" class="square-checkbox lk-profile-form__checkbox">
+											<input type="checkbox" id="checkbox-notification-email" class="square-checkbox__input">
+											<div class="square-checkbox__group">
+												<span class="square-checkbox__icon"></span>
+												<span class="square-checkbox__title">E-mail</span>
+											</div>
+										</label>
+										<label for="checkbox-notification-push" class="square-checkbox lk-profile-form__checkbox">
+											<input type="checkbox" id="checkbox-notification-push" class="square-checkbox__input">
+											<div class="square-checkbox__group">
+												<span class="square-checkbox__icon"></span>
+												<span class="square-checkbox__title">Push</span>
+											</div>
+										</label>
+									</div>
+								</div>
+								<div class="lk-profile-form__inner">
+									<button class="lk-profile-form__btn btn">Сохранить</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
