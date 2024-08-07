@@ -81,12 +81,22 @@
 							</div>
 						</div>
 						<div class="c-user header__user">
-							<a href="profile.html" class="c-user__wrapper">
+							<button class="c-user__trigger">
 								<picture class="c-user__img">
 									<span>АС</span>
 								</picture>
 								<span class="c-user__title">Александр Смирнов</span>
-							</a>
+							</button>
+							<div class="c-user__container">
+								<ul class="c-user__list">
+									<li class="c-user__item">
+										<a href="profile.html" class="c-user__link">Профиль</a>
+									</li>
+									<li class="c-user__item">
+										<a href="#" class="c-user__link">Выйти</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 						<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
 							<span class="hamburger__inner"></span>
@@ -195,13 +205,13 @@
 	<!-- menu -->
 	<div class="menu" id="menu">
 		<div class="menu__wrap">
-			<div class="menu__top">
-				<button class="menu__close" id="menu-close" aria-label="Закрыть">
-					<svg>
-						<use xlink:href="img/sprite.svg#icon-close"></use>
-					</svg>
-				</button>
-			</div>
+			<!-- <div class="menu__top">
+            <button class="menu__close" id="menu-close" aria-label="Закрыть">
+                <svg>
+                    <use xlink:href="img/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div> -->
 			<nav class="menu__nav">
 				<ul class="menu__list">
 					<li class="menu__item">
