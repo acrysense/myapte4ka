@@ -156,6 +156,17 @@
 					</ul>
 				</nav>
 				<div class="lk__main">
+					<div class="lk-topping lk__topping lk__topping--mobile">
+						<div class="lk-topping__wrapper">
+							<button class="lk-topping__back" aria-label="Назад">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+								</svg>
+							</button>
+							<h1 class="lk-topping__title">Профиль</h1>
+							<a href="#" class="lk-topping__link">Выйти</a>
+						</div>
+					</div>
 					<div class="lk-user lk__user">
 						<div class="lk-user__wrapper">
 							<picture class="lk-user__img">
@@ -168,141 +179,203 @@
 						</div>
 					</div>
 					<div class="lk-profile lk__profile">
-						<div class="lk-profile__tabs"></div>
-						<form action="#" class="lk-profile-form lk-profile__form">
-							<div class="lk-profile-form__wrapper">
-								<div class="lk-profile-form__data">
-									<div class="input-field lk-profile-form__input">
-										<label for="profile-email" class="input-field__label input-field__label--desktop">E-mail</label>
-										<div class="input-field__inner">
-											<input type="text" id="profile-email" class="input-field__input" placeholder="Обязательное поле" value="bronislavovich@gmail.by" disabled>
-											<label for="profile-email" class="input-field__label input-field__label--mobile">E-mail</label>
+						<div class="lk-tabs lk-profile__tabs">
+							<ul class="lk-tabs__list">
+								<li class="lk-tabs__item is--active">
+									<button class="lk-tabs__tab">Информация</button>
+								</li>
+								<li class="lk-tabs__item">
+									<button class="lk-tabs__tab">Безопасность</button>
+								</li>
+								<li class="lk-tabs__item">
+									<button class="lk-tabs__tab">Уведомления</button>
+								</li>
+							</ul>
+							<div class="lk-tabs__holder is--active">
+								<form action="#" class="lk-profile-form lk-profile__form">
+									<div class="lk-profile-form__wrapper">
+										<div class="lk-profile-form__data">
+											<div class="input-field lk-profile-form__input">
+												<label for="profile-email" class="input-field__label input-field__label--desktop">E-mail</label>
+												<div class="input-field__inner">
+													<input type="text" id="profile-email" class="input-field__input" placeholder="Обязательное поле" value="bronislavovich@gmail.by" disabled>
+													<label for="profile-email" class="input-field__label input-field__label--mobile">E-mail</label>
+												</div>
+												<span class="input-field__error">Неверный e-mail</span>
+											</div>
+											<div class="input-field lk-profile-form__input">
+												<label for="profile-sex" class="input-field__label input-field__label--desktop">Пол</label>
+												<div class="input-field__inner">
+													<input type="text" id="profile-sex" class="input-field__input" placeholder="Обязательное поле" value="Мужской" disabled>
+													<label for="profile-sex" class="input-field__label input-field__label--mobile">Пол</label>
+												</div>
+												<span class="input-field__error">Неверный пол</span>
+											</div>
+											<div class="input-field lk-profile-form__input">
+												<label for="profile-name" class="input-field__label input-field__label--desktop">Дата рождения</label>
+												<div class="input-field__inner">
+													<input type="text" id="profile-name" class="input-field__input" placeholder="Обязательное поле" value="12.11.2000" disabled>
+													<label for="profile-name" class="input-field__label input-field__label--mobile">Дата рождения</label>
+												</div>
+												<span class="input-field__error">Неверная дата рождения</span>
+											</div>
+											<div class="input-field lk-profile-form__input">
+												<label for="profile-region" class="input-field__label input-field__label--desktop">Область</label>
+												<div class="input-field__inner">
+													<input type="text" id="profile-region" class="input-field__input" placeholder="Обязательное поле" value="Минск" disabled>
+													<label for="profile-region" class="input-field__label input-field__label--mobile">Область</label>
+												</div>
+												<span class="input-field__error">Неверная область</span>
+											</div>
+											<div class="input-field lk-profile-form__input">
+												<label for="profile-city" class="input-field__label input-field__label--desktop">Город</label>
+												<div class="input-field__inner">
+													<input type="text" id="profile-city" class="input-field__input" placeholder="Обязательное поле" value="Минск" disabled>
+													<label for="profile-city" class="input-field__label input-field__label--mobile">Город</label>
+												</div>
+												<span class="input-field__error">Неверный город</span>
+											</div>
 										</div>
-										<span class="input-field__error">Неверный e-mail</span>
-									</div>
-									<div class="input-field lk-profile-form__input">
-										<label for="profile-sex" class="input-field__label input-field__label--desktop">Пол</label>
-										<div class="input-field__inner">
-											<input type="text" id="profile-sex" class="input-field__input" placeholder="Обязательное поле" value="Мужской" disabled>
-											<label for="profile-sex" class="input-field__label input-field__label--mobile">Пол</label>
+										<div class="lk-profile-form__triggers lk-profile-form__triggers--mobile">
+											<a href="#" class="lk-trigger lk-profile-form__trigger" data-id="security">
+												<div class="lk-trigger__icon">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-security"></use>
+													</svg>
+												</div>
+												<span>Безопасность</span>
+											</a>
+											<a href="#" class="lk-trigger lk-profile-form__trigger" data-id="notifications">
+												<div class="lk-trigger__icon">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-notifications"></use>
+													</svg>
+												</div>
+												<span>Уведомления</span>
+											</a>
 										</div>
-										<span class="input-field__error">Неверный пол</span>
-									</div>
-									<div class="input-field lk-profile-form__input">
-										<label for="profile-name" class="input-field__label input-field__label--desktop">Дата рождения</label>
-										<div class="input-field__inner">
-											<input type="text" id="profile-name" class="input-field__input" placeholder="Обязательное поле" value="12.11.2000" disabled>
-											<label for="profile-name" class="input-field__label input-field__label--mobile">Дата рождения</label>
+										<div class="lk-profile-form__inner">
+											<button class="lk-profile-form__btn btn">Сохранить</button>
+											<button class="lk-profile-form__btn btn btn--border-grey">Выйти</button>
 										</div>
-										<span class="input-field__error">Неверная дата рождения</span>
 									</div>
-									<div class="input-field lk-profile-form__input">
-										<label for="profile-region" class="input-field__label input-field__label--desktop">Область</label>
-										<div class="input-field__inner">
-											<input type="text" id="profile-region" class="input-field__input" placeholder="Обязательное поле" value="Минск" disabled>
-											<label for="profile-region" class="input-field__label input-field__label--mobile">Область</label>
-										</div>
-										<span class="input-field__error">Неверная область</span>
-									</div>
-									<div class="input-field lk-profile-form__input">
-										<label for="profile-city" class="input-field__label input-field__label--desktop">Город</label>
-										<div class="input-field__inner">
-											<input type="text" id="profile-city" class="input-field__input" placeholder="Обязательное поле" value="Минск" disabled>
-											<label for="profile-city" class="input-field__label input-field__label--mobile">Город</label>
-										</div>
-										<span class="input-field__error">Неверный город</span>
-									</div>
-								</div>
-								<div class="lk-profile-form__inner">
-									<button class="lk-profile-form__btn btn">Сохранить</button>
-									<button class="lk-profile-form__btn btn btn--border-grey">Выйти</button>
-								</div>
+								</form>
 							</div>
-						</form>
-						<form action="#" class="lk-profile-form lk-profile__form">
-							<div class="lk-profile-form__wrapper">
-								<div class="lk-profile-form__data lk-profile-form__data--short">
-									<div class="input-field lk-profile-form__input">
-										<div class="input-field__inner">
-											<div class="input-field__visibility">
-												<svg class="input-field__visibility-icon input-field__visibility-icon--default">
-													<use xlink:href="img/sprite.svg#icon-eye-crossed"></use>
-												</svg>
-												<svg class="input-field__visibility-icon input-field__visibility-icon--active">
-													<use xlink:href="img/sprite.svg#icon-eye"></use>
-												</svg>
+							<div class="lk-tabs__holder" data-id="security">
+								<div class="lk-topping lk__topping lk__topping--mobile">
+									<div class="lk-topping__wrapper">
+										<button class="lk-topping__back" aria-label="Назад">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+											</svg>
+										</button>
+										<h1 class="lk-topping__title">Безопасность</h1>
+										<button class="lk-topping__btn" aria-label="Удалить пользователя">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-user-delete"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<form action="#" class="lk-profile-form lk-profile__form">
+									<div class="lk-profile-form__wrapper">
+										<div class="lk-profile-form__data lk-profile-form__data--short">
+											<div class="input-field lk-profile-form__input">
+												<div class="input-field__inner">
+													<div class="input-field__visibility">
+														<svg class="input-field__visibility-icon input-field__visibility-icon--default">
+															<use xlink:href="img/sprite.svg#icon-eye-crossed"></use>
+														</svg>
+														<svg class="input-field__visibility-icon input-field__visibility-icon--active">
+															<use xlink:href="img/sprite.svg#icon-eye"></use>
+														</svg>
+													</div>
+													<input type="password" id="profile-password" class="input-field__input" placeholder="Пароль">
+												</div>
+												<span class="input-field__error">Неверный пароль</span>
 											</div>
-											<input type="password" id="profile-password" class="input-field__input" placeholder="Пароль">
+											<div class="input-field lk-profile-form__input">
+												<div class="input-field__inner">
+													<div class="input-field__visibility">
+														<svg class="input-field__visibility-icon input-field__visibility-icon--default">
+															<use xlink:href="img/sprite.svg#icon-eye-crossed"></use>
+														</svg>
+														<svg class="input-field__visibility-icon input-field__visibility-icon--active">
+															<use xlink:href="img/sprite.svg#icon-eye"></use>
+														</svg>
+													</div>
+													<input type="password" id="profile-password-again" class="input-field__input" placeholder="Пароль повторно">
+												</div>
+												<span class="input-field__error">Неверный пароль</span>
+											</div>
 										</div>
-										<span class="input-field__error">Неверный пароль</span>
-									</div>
-									<div class="input-field lk-profile-form__input">
-										<div class="input-field__inner">
-											<div class="input-field__visibility">
-												<svg class="input-field__visibility-icon input-field__visibility-icon--default">
-													<use xlink:href="img/sprite.svg#icon-eye-crossed"></use>
-												</svg>
-												<svg class="input-field__visibility-icon input-field__visibility-icon--active">
-													<use xlink:href="img/sprite.svg#icon-eye"></use>
-												</svg>
-											</div>
-											<input type="password" id="profile-password-again" class="input-field__input" placeholder="Пароль повторно">
+										<div class="lk-profile-form__inner">
+											<button class="lk-profile-form__btn btn">Сохранить</button>
+											<button class="lk-profile-form__btn btn btn--border-grey">Удалить профиль</button>
 										</div>
-										<span class="input-field__error">Неверный пароль</span>
+									</div>
+								</form>
+							</div>
+							<div class="lk-tabs__holder" data-id="notifications">
+								<div class="lk-topping lk__topping lk__topping--mobile">
+									<div class="lk-topping__wrapper">
+										<button class="lk-topping__back" aria-label="Назад">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+											</svg>
+										</button>
+										<h1 class="lk-topping__title">Уведомления</h1>
+										<a href="#" class="lk-topping__link">Выйти</a>
 									</div>
 								</div>
-								<div class="lk-profile-form__inner">
-									<button class="lk-profile-form__btn btn">Сохранить</button>
-									<button class="lk-profile-form__btn btn btn--border-grey">Удалить профиль</button>
-								</div>
-							</div>
-						</form>
-						<form action="#" class="lk-profile-form lk-profile__form">
-							<div class="lk-profile-form__wrapper">
-								<div class="lk-profile-form__data">
-									<div class="lk-profile-form__checkboxes">
-										<label for="checkbox-notification-sms" class="square-checkbox lk-profile-form__checkbox">
-											<input type="checkbox" id="checkbox-notification-sms" class="square-checkbox__input">
-											<div class="square-checkbox__group">
-												<span class="square-checkbox__icon"></span>
-												<span class="square-checkbox__title">SMS</span>
+								<form action="#" class="lk-profile-form lk-profile__form">
+									<div class="lk-profile-form__wrapper">
+										<div class="lk-profile-form__data">
+											<div class="lk-profile-form__checkboxes">
+												<label for="checkbox-notification-sms" class="square-checkbox lk-profile-form__checkbox">
+													<input type="checkbox" id="checkbox-notification-sms" class="square-checkbox__input">
+													<div class="square-checkbox__group">
+														<span class="square-checkbox__icon"></span>
+														<span class="square-checkbox__title">SMS</span>
+													</div>
+												</label>
+												<label for="checkbox-notification-viber" class="square-checkbox lk-profile-form__checkbox">
+													<input type="checkbox" id="checkbox-notification-viber" class="square-checkbox__input">
+													<div class="square-checkbox__group">
+														<span class="square-checkbox__icon"></span>
+														<span class="square-checkbox__title">Viber</span>
+													</div>
+												</label>
+												<label for="checkbox-notification-tg" class="square-checkbox lk-profile-form__checkbox">
+													<input type="checkbox" id="checkbox-notification-tg" class="square-checkbox__input">
+													<div class="square-checkbox__group">
+														<span class="square-checkbox__icon"></span>
+														<span class="square-checkbox__title">Telegram</span>
+													</div>
+												</label>
+												<label for="checkbox-notification-email" class="square-checkbox lk-profile-form__checkbox">
+													<input type="checkbox" id="checkbox-notification-email" class="square-checkbox__input">
+													<div class="square-checkbox__group">
+														<span class="square-checkbox__icon"></span>
+														<span class="square-checkbox__title">E-mail</span>
+													</div>
+												</label>
+												<label for="checkbox-notification-push" class="square-checkbox lk-profile-form__checkbox">
+													<input type="checkbox" id="checkbox-notification-push" class="square-checkbox__input">
+													<div class="square-checkbox__group">
+														<span class="square-checkbox__icon"></span>
+														<span class="square-checkbox__title">Push</span>
+													</div>
+												</label>
 											</div>
-										</label>
-										<label for="checkbox-notification-viber" class="square-checkbox lk-profile-form__checkbox">
-											<input type="checkbox" id="checkbox-notification-viber" class="square-checkbox__input">
-											<div class="square-checkbox__group">
-												<span class="square-checkbox__icon"></span>
-												<span class="square-checkbox__title">Viber</span>
-											</div>
-										</label>
-										<label for="checkbox-notification-tg" class="square-checkbox lk-profile-form__checkbox">
-											<input type="checkbox" id="checkbox-notification-tg" class="square-checkbox__input">
-											<div class="square-checkbox__group">
-												<span class="square-checkbox__icon"></span>
-												<span class="square-checkbox__title">Telegram</span>
-											</div>
-										</label>
-										<label for="checkbox-notification-email" class="square-checkbox lk-profile-form__checkbox">
-											<input type="checkbox" id="checkbox-notification-email" class="square-checkbox__input">
-											<div class="square-checkbox__group">
-												<span class="square-checkbox__icon"></span>
-												<span class="square-checkbox__title">E-mail</span>
-											</div>
-										</label>
-										<label for="checkbox-notification-push" class="square-checkbox lk-profile-form__checkbox">
-											<input type="checkbox" id="checkbox-notification-push" class="square-checkbox__input">
-											<div class="square-checkbox__group">
-												<span class="square-checkbox__icon"></span>
-												<span class="square-checkbox__title">Push</span>
-											</div>
-										</label>
+										</div>
+										<div class="lk-profile-form__inner">
+											<button class="lk-profile-form__btn btn">Сохранить</button>
+										</div>
 									</div>
-								</div>
-								<div class="lk-profile-form__inner">
-									<button class="lk-profile-form__btn btn">Сохранить</button>
-								</div>
+								</form>
 							</div>
-						</form>
+						</div>
 					</div>
 				</div>
 			</div>
