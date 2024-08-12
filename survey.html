@@ -43,7 +43,7 @@
 								<span class="switch__icon"></span>
 							</div>
 						</label>
-						<div class="input-field auth-form__input is--hidden">
+						<div class="input-field auth-form__input hidden-block is--hidden">
 							<label for="auth-plastic-card" class="input-field__label input-field__label--desktop">Номер карты</label>
 							<div class="input-field__inner">
 								<input type="text" id="auth-plastic-card" class="input-field__input" placeholder="Номер вашей карты">
@@ -108,7 +108,7 @@
 					<div class="input-field auth-form__input">
 						<label for="auth-number" class="input-field__label input-field__label--desktop">Дата рождения</label>
 						<div class="input-field__inner">
-							<input type="text" id="auth-number" class="input-field__input" placeholder="Обязательное поле">
+							<input type="text" id="auth-number" class="input-field__input" placeholder="Обязательное поле" data-inputmask="'mask': '99.99.9999'">
 							<label for="auth-number" class="input-field__label input-field__label--mobile">Дата рождения</label>
 						</div>
 						<span class="input-field__error">Неверная дата рождения</span>
@@ -122,20 +122,21 @@
 						<span class="input-field__error">Неверный e-mail</span>
 					</div>
 					<div class="input-field auth-form__input">
+						<label for="auth-region" class="input-field__label input-field__label--desktop">Область</label>
+						<div class="input-field__inner">
+							<input type="text" id="auth-region" class="input-field__input input-dadata-region" placeholder="Обязательное поле">
+							<label for="auth-region" class="input-field__label input-field__label--mobile">Область</label>
+							<div class="input-field__dropdown"></div>
+						</div>
+						<span class="input-field__error">Неверная область</span>
+					</div>
+					<div class="input-field auth-form__input">
 						<label for="auth-city" class="input-field__label input-field__label--desktop">Город</label>
 						<div class="input-field__inner">
 							<input type="text" id="auth-city" class="input-field__input" placeholder="Обязательное поле">
 							<label for="auth-city" class="input-field__label input-field__label--mobile">Город</label>
 						</div>
 						<span class="input-field__error">Неверный город</span>
-					</div>
-					<div class="input-field auth-form__input">
-						<label for="auth-region" class="input-field__label input-field__label--desktop">Область</label>
-						<div class="input-field__inner">
-							<input type="text" id="auth-region" class="input-field__input" placeholder="Обязательное поле">
-							<label for="auth-region" class="input-field__label input-field__label--mobile">Область</label>
-						</div>
-						<span class="input-field__error">Неверная область</span>
 					</div>
 					<div class="auth-form__switches">
 						<label for="switch-program-card" class="switch auth-form__switch js-input-visibility">
@@ -145,13 +146,35 @@
 								<span class="switch__icon"></span>
 							</div>
 						</label>
-						<div class="input-field auth-form__input is--hidden">
-							<label for="auth-program-card" class="input-field__label input-field__label--desktop">Номер карты</label>
-							<div class="input-field__inner">
-								<input type="text" id="auth-program-card" class="input-field__input" placeholder="Номер вашей карты">
-								<label for="auth-program-card" class="input-field__label input-field__label--mobile">Номер карты</label>
-							</div>
-							<span class="input-field__error">Карта не найдена</span>
+						<div class="auth-form__checkboxes hidden-block is--hidden">
+							<label for="checkbox-notification-sms" class="square-checkbox auth-form__checkbox">
+								<input type="checkbox" id="checkbox-notification-sms" class="square-checkbox__input">
+								<div class="square-checkbox__group">
+									<span class="square-checkbox__icon"></span>
+									<span class="square-checkbox__title">Удостоверение многодетной семьи</span>
+								</div>
+							</label>
+							<label for="checkbox-notification-viber" class="square-checkbox auth-form__checkbox">
+								<input type="checkbox" id="checkbox-notification-viber" class="square-checkbox__input">
+								<div class="square-checkbox__group">
+									<span class="square-checkbox__icon"></span>
+									<span class="square-checkbox__title">Удостоверение инвалидности</span>
+								</div>
+							</label>
+							<label for="checkbox-notification-tg" class="square-checkbox auth-form__checkbox">
+								<input type="checkbox" id="checkbox-notification-tg" class="square-checkbox__input">
+								<div class="square-checkbox__group">
+									<span class="square-checkbox__icon"></span>
+									<span class="square-checkbox__title">Пенсионное удостоверение</span>
+								</div>
+							</label>
+							<label for="checkbox-notification-email" class="square-checkbox auth-form__checkbox">
+								<input type="checkbox" id="checkbox-notification-email" class="square-checkbox__input">
+								<div class="square-checkbox__group">
+									<span class="square-checkbox__icon"></span>
+									<span class="square-checkbox__title">Удостоверение пострадавшего от катастрофы на Чернобыльской АЭС, других радиационных аварий</span>
+								</div>
+							</label>
 						</div>
 					</div>
 					<hr>
