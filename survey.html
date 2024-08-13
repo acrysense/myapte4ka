@@ -26,6 +26,16 @@
 	<!-- auth -->
 	<div class="auth" id="auth">
 		<div class="auth__wrap auth__wrap--wide">
+			<div class="lk-topping auth__topping">
+				<div class="lk-topping__wrapper">
+					<a href="#" class="lk-topping__back" aria-label="Назад">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+						</svg>
+					</a>
+					<h1 class="lk-topping__title">Анкета участника</h1>
+				</div>
+			</div>
 			<picture class="auth__logotype">
 				<img src="img/logotype.svg" width="212.5" height="50" alt="аптечка+">
 			</picture>
@@ -108,7 +118,7 @@
 					<div class="input-field auth-form__input">
 						<label for="auth-number" class="input-field__label input-field__label--desktop">Дата рождения</label>
 						<div class="input-field__inner">
-							<input type="text" id="auth-number" class="input-field__input" placeholder="Обязательное поле" data-inputmask="'mask': '99.99.9999'">
+							<input type="tel" id="auth-number" class="input-field__input" placeholder="Обязательное поле" data-inputmask="'mask': '99.99.9999'">
 							<label for="auth-number" class="input-field__label input-field__label--mobile">Дата рождения</label>
 						</div>
 						<span class="input-field__error">Неверная дата рождения</span>
@@ -133,8 +143,9 @@
 					<div class="input-field auth-form__input">
 						<label for="auth-city" class="input-field__label input-field__label--desktop">Город</label>
 						<div class="input-field__inner">
-							<input type="text" id="auth-city" class="input-field__input" placeholder="Обязательное поле">
+							<input type="text" id="auth-city" class="input-field__input input-dadata-city" placeholder="Обязательное поле">
 							<label for="auth-city" class="input-field__label input-field__label--mobile">Город</label>
+							<div class="input-field__dropdown"></div>
 						</div>
 						<span class="input-field__error">Неверный город</span>
 					</div>
