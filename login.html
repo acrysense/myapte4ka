@@ -60,7 +60,7 @@
 				<div class="auth__top auth__top--center">
 					<h3 class="auth__title">Войти в кабинет</h3>
 				</div>
-				<form action="#" class="auth-form auth__form">
+				<form action="#" class="auth-form auth__form validation-form">
 					<div class="input-field auth-form__input">
 						<div class="input-field__inner">
 							<div class="input-field__clear">
@@ -68,7 +68,7 @@
 									<use xlink:href="img/sprite.svg#icon-close"></use>
 								</svg>
 							</div>
-							<input type="tel" id="auth-number" class="input-field__input" placeholder="+375 (__) ___-__-__" data-inputmask="'mask': '+375 (99) 999-99-99'">
+							<input type="tel" id="auth-number" class="input-field__input" placeholder="+375 (__) ___-__-__" data-inputmask="'mask': '+375 (99) 999-99-99'" data-validation="required">
 						</div>
 						<span class="input-field__error">Неверный номер телефона</span>
 					</div>
@@ -82,11 +82,13 @@
 									<use xlink:href="img/sprite.svg#icon-eye"></use>
 								</svg>
 							</div>
-							<input type="password" id="auth-password" class="input-field__input" placeholder="Пароль">
+							<input type="password" id="auth-password" class="input-field__input" placeholder="Пароль" data-type="password" data-min-value="6" data-validation="required">
 						</div>
 						<span class="input-field__error">Неверный пароль</span>
 					</div>
 					<button class="auth-form__btn btn">войти</button>
+					<span class="validation-form-message">Не все обязательные поля заполнены верно</span>
+					<span class="validation-form-message-server">Неправильный логин или пароль</span>
 				</form>
 				<div class="auth__block">
 					<span class="auth__subtitle">Впервые у нас?</span>
