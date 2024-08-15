@@ -71,7 +71,7 @@
 					<h3 class="auth__title">Анкета программы лояльности</h3>
 					<p class="auth__description">Это анкета участника программы лояльности. Данная анкета обязательна для регистрации в личном кабинете.</p>
 				</div>
-				<form action="#" class="auth-form auth__form">
+				<form action="#" class="auth-form auth__form validation-form">
 					<div class="auth-form__switches">
 						<label for="switch-plastic-card" class="switch auth-form__switch js-input-visibility">
 							<input type="checkbox" id="switch-plastic-card" class="switch__input">
@@ -93,30 +93,30 @@
 					<div class="input-field auth-form__input">
 						<label for="auth-name" class="input-field__label input-field__label--desktop">Имя</label>
 						<div class="input-field__inner">
-							<input type="text" id="auth-name" class="input-field__input" placeholder="Обязательное поле">
+							<input type="text" id="auth-name" class="input-field__input" placeholder="Обязательное поле" data-validation="required">
 							<label for="auth-name" class="input-field__label input-field__label--mobile">Имя</label>
 						</div>
-						<span class="input-field__error">Неверное имя</span>
+						<span class="input-field__error">Введите значение</span>
 					</div>
 					<div class="input-field auth-form__input">
 						<label for="auth-number" class="input-field__label input-field__label--desktop">Фамилия</label>
 						<div class="input-field__inner">
-							<input type="text" id="auth-surname" class="input-field__input" placeholder="Обязательное поле">
+							<input type="text" id="auth-surname" class="input-field__input" placeholder="Обязательное поле" data-validation="required">
 							<label for="auth-surname" class="input-field__label input-field__label--mobile">Фамилия</label>
 						</div>
-						<span class="input-field__error">Неверная фамилия</span>
+						<span class="input-field__error">Введите значение</span>
 					</div>
 					<div class="input-field auth-form__input">
 						<label for="auth-patronymic" class="input-field__label input-field__label--desktop">Отчество</label>
 						<div class="input-field__inner">
-							<input type="text" id="auth-patronymic" class="input-field__input" placeholder="Обязательное поле">
+							<input type="text" id="auth-patronymic" class="input-field__input" placeholder="Необязательное поле">
 							<label for="auth-patronymic" class="input-field__label input-field__label--mobile">Отчество</label>
 						</div>
-						<span class="input-field__error">Неверное отчество</span>
+						<span class="input-field__error">Введите значение</span>
 					</div>
 					<div class="input-field auth-form__input">
 						<span class="input-field__label input-field__label--desktop">Пол</span>
-						<div class="input-field__select select-box">
+						<div class="input-field__select select-box" data-validation="required">
 							<div class="select-box__placeholder">
 								<span>Обязательное поле</span>
 								<svg>
@@ -140,41 +140,41 @@
 								</div>
 							</div>
 						</div>
-						<span class="input-field__error">Неверный пол</span>
+						<span class="input-field__error">Выберите значение</span>
 					</div>
 					<div class="input-field auth-form__input">
 						<label for="auth-number" class="input-field__label input-field__label--desktop">Дата рождения</label>
 						<div class="input-field__inner">
-							<input type="tel" id="auth-number" class="input-field__input" placeholder="Обязательное поле" data-inputmask="'mask': '99.99.9999'">
+							<input type="tel" id="auth-number" class="input-field__input" placeholder="Обязательное поле" data-inputmask="'mask': '99.99.9999'" data-type="date" data-validation="required">
 							<label for="auth-number" class="input-field__label input-field__label--mobile">Дата рождения</label>
 						</div>
-						<span class="input-field__error">Неверная дата рождения</span>
+						<span class="input-field__error">Введите значение</span>
 					</div>
 					<div class="input-field auth-form__input">
 						<label for="auth-email" class="input-field__label input-field__label--desktop">E-mail</label>
 						<div class="input-field__inner">
-							<input type="text" id="auth-email" class="input-field__input" placeholder="Обязательное поле">
+							<input type="text" id="auth-email" class="input-field__input" placeholder="Небязательное поле">
 							<label for="auth-email" class="input-field__label input-field__label--mobile">E-mail</label>
 						</div>
-						<span class="input-field__error">Неверный e-mail</span>
+						<span class="input-field__error">Введите значение</span>
 					</div>
 					<div class="input-field auth-form__input">
 						<label for="auth-region" class="input-field__label input-field__label--desktop">Область</label>
 						<div class="input-field__inner">
-							<input type="text" id="auth-region" class="input-field__input input-dadata-region" placeholder="Обязательное поле">
+							<input type="text" id="auth-region" class="input-field__input input-dadata-region" placeholder="Обязательное поле" data-validation="required">
 							<label for="auth-region" class="input-field__label input-field__label--mobile">Область</label>
 							<div class="input-field__dropdown"></div>
 						</div>
-						<span class="input-field__error">Неверная область</span>
+						<span class="input-field__error">Введите значение</span>
 					</div>
 					<div class="input-field auth-form__input">
 						<label for="auth-city" class="input-field__label input-field__label--desktop">Город</label>
 						<div class="input-field__inner">
-							<input type="text" id="auth-city" class="input-field__input input-dadata-city" placeholder="Обязательное поле">
+							<input type="text" id="auth-city" class="input-field__input input-dadata-city" placeholder="Обязательное поле" data-validation="required">
 							<label for="auth-city" class="input-field__label input-field__label--mobile">Город</label>
 							<div class="input-field__dropdown"></div>
 						</div>
-						<span class="input-field__error">Неверный город</span>
+						<span class="input-field__error">Введите значение</span>
 					</div>
 					<div class="auth-form__switches">
 						<label for="switch-program-card" class="switch auth-form__switch js-input-visibility">
@@ -218,14 +218,14 @@
 					<hr>
 					<div class="auth-form__switches">
 						<label for="switch-bonus-program" class="switch auth-form__switch">
-							<input type="checkbox" id="switch-bonus-program" class="switch__input">
+							<input type="checkbox" id="switch-bonus-program" class="switch__input" data-validation="required">
 							<div class="switch__group">
 								<span class="switch__title">Я ознакомлен и согласен с правилами действия <a href="#">Положения о бонусной программе лояльности «Аптечка»</a></span>
 								<span class="switch__icon"></span>
 							</div>
 						</label>
 						<label for="switch-personal-data" class="switch auth-form__switch">
-							<input type="checkbox" id="switch-personal-data" class="switch__input">
+							<input type="checkbox" id="switch-personal-data" class="switch__input" data-validation="required">
 							<div class="switch__group">
 								<span class="switch__title">Я подтверждаю согласие на обработку моих <a href="#">персональных данных</a></span>
 								<span class="switch__icon"></span>
@@ -233,53 +233,49 @@
 						</label>
 					</div>
 					<hr>
-					<div class="auth-form__switches">
-						<label for="switch-notification" class="switch auth-form__switch">
-							<input type="checkbox" id="switch-notification" class="switch__input">
-							<div class="switch__group">
-								<span class="switch__title">Я согласен на получение сервисных уведомлений, информации о новых товарах и специальных предложениях</span>
-								<span class="switch__icon"></span>
-							</div>
-						</label>
-					</div>
-					<div class="auth-form__checkboxes">
-						<label for="checkbox-notification-sms" class="square-checkbox auth-form__checkbox">
-							<input type="checkbox" id="checkbox-notification-sms" class="square-checkbox__input">
-							<div class="square-checkbox__group">
-								<span class="square-checkbox__icon"></span>
-								<span class="square-checkbox__title">SMS</span>
-							</div>
-						</label>
-						<label for="checkbox-notification-viber" class="square-checkbox auth-form__checkbox">
-							<input type="checkbox" id="checkbox-notification-viber" class="square-checkbox__input">
-							<div class="square-checkbox__group">
-								<span class="square-checkbox__icon"></span>
-								<span class="square-checkbox__title">Viber</span>
-							</div>
-						</label>
-						<label for="checkbox-notification-tg" class="square-checkbox auth-form__checkbox">
-							<input type="checkbox" id="checkbox-notification-tg" class="square-checkbox__input">
-							<div class="square-checkbox__group">
-								<span class="square-checkbox__icon"></span>
-								<span class="square-checkbox__title">Telegram</span>
-							</div>
-						</label>
-						<label for="checkbox-notification-email" class="square-checkbox auth-form__checkbox">
-							<input type="checkbox" id="checkbox-notification-email" class="square-checkbox__input">
-							<div class="square-checkbox__group">
-								<span class="square-checkbox__icon"></span>
-								<span class="square-checkbox__title">E-mail</span>
-							</div>
-						</label>
-						<label for="checkbox-notification-push" class="square-checkbox auth-form__checkbox">
-							<input type="checkbox" id="checkbox-notification-push" class="square-checkbox__input">
-							<div class="square-checkbox__group">
-								<span class="square-checkbox__icon"></span>
-								<span class="square-checkbox__title">Push</span>
-							</div>
-						</label>
+					<div class="auth-form__group">
+						<div class="auth-form__subtitle">Я согласен на получение сервисных уведомлений, информации о новых товарах и специальных предложениях:</div>
+						<div class="auth-form__checkboxes">
+							<label for="checkbox-notification-sms" class="square-checkbox auth-form__checkbox">
+								<input type="checkbox" id="checkbox-notification-sms" class="square-checkbox__input" checked disabled>
+								<div class="square-checkbox__group">
+									<span class="square-checkbox__icon"></span>
+									<span class="square-checkbox__title">SMS</span>
+								</div>
+							</label>
+							<label for="checkbox-notification-viber" class="square-checkbox auth-form__checkbox">
+								<input type="checkbox" id="checkbox-notification-viber" class="square-checkbox__input">
+								<div class="square-checkbox__group">
+									<span class="square-checkbox__icon"></span>
+									<span class="square-checkbox__title">Viber</span>
+								</div>
+							</label>
+							<label for="checkbox-notification-tg" class="square-checkbox auth-form__checkbox">
+								<input type="checkbox" id="checkbox-notification-tg" class="square-checkbox__input">
+								<div class="square-checkbox__group">
+									<span class="square-checkbox__icon"></span>
+									<span class="square-checkbox__title">Telegram</span>
+								</div>
+							</label>
+							<label for="checkbox-notification-email" class="square-checkbox auth-form__checkbox">
+								<input type="checkbox" id="checkbox-notification-email" class="square-checkbox__input">
+								<div class="square-checkbox__group">
+									<span class="square-checkbox__icon"></span>
+									<span class="square-checkbox__title">E-mail</span>
+								</div>
+							</label>
+							<label for="checkbox-notification-push" class="square-checkbox auth-form__checkbox">
+								<input type="checkbox" id="checkbox-notification-push" class="square-checkbox__input">
+								<div class="square-checkbox__group">
+									<span class="square-checkbox__icon"></span>
+									<span class="square-checkbox__title">Push</span>
+								</div>
+							</label>
+						</div>
 					</div>
 					<button class="auth-form__btn btn">Продолжить</button>
+					<span class="validation-form-message">Не все обязательные поля заполнены верно</span>
+					<span class="validation-form-message-server">В данный момент регистрация недоступна</span>
 				</form>
 			</div>
 		</div>
