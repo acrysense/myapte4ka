@@ -99,7 +99,7 @@
 						<span class="input-field__error">Введите значение</span>
 					</div>
 					<div class="input-field auth-form__input">
-						<label for="auth-number" class="input-field__label input-field__label--desktop">Фамилия</label>
+						<label for="auth-surname" class="input-field__label input-field__label--desktop">Фамилия</label>
 						<div class="input-field__inner">
 							<input type="text" id="auth-surname" class="input-field__input" placeholder="Обязательное поле" data-validation="required">
 							<label for="auth-surname" class="input-field__label input-field__label--mobile">Фамилия</label>
@@ -143,12 +143,13 @@
 						<span class="input-field__error">Выберите значение</span>
 					</div>
 					<div class="input-field auth-form__input">
-						<label for="auth-number" class="input-field__label input-field__label--desktop">Дата рождения</label>
+						<label for="auth-birthday" class="input-field__label input-field__label--desktop">Дата рождения</label>
 						<div class="input-field__inner">
-							<input type="tel" id="auth-number" class="input-field__input" placeholder="Обязательное поле" data-inputmask="'mask': '99.99.9999'" data-type="date" data-validation="required">
-							<label for="auth-number" class="input-field__label input-field__label--mobile">Дата рождения</label>
+							<input type="tel" id="auth-birthday" class="input-field__input input-field__input--date" placeholder="Обязательное поле" data-inputmask="'mask': '99.99.9999'" data-type="date" data-validation="required">
+							<label for="auth-birthday" class="input-field__label input-field__label--mobile">Дата рождения</label>
 						</div>
-						<span class="input-field__error">Введите значение</span>
+						<span class="input-field__error">Некорректно указана дата рождения</span>
+						<span class="input-field__help">Участник программы может быть не младше 18 лет</span>
 					</div>
 					<div class="input-field auth-form__input">
 						<label for="auth-email" class="input-field__label input-field__label--desktop">E-mail</label>
