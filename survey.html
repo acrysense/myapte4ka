@@ -154,7 +154,7 @@
 					<div class="input-field auth-form__input">
 						<label for="auth-email" class="input-field__label input-field__label--desktop">E-mail</label>
 						<div class="input-field__inner">
-							<input type="text" id="auth-email" class="input-field__input" placeholder="Небязательное поле">
+							<input type="email" id="auth-email" class="input-field__input" placeholder="Небязательное поле">
 							<label for="auth-email" class="input-field__label input-field__label--mobile">E-mail</label>
 						</div>
 						<span class="input-field__error">Введите значение</span>
@@ -220,14 +220,14 @@
 					<hr>
 					<div class="auth-form__switches">
 						<label for="switch-bonus-program" class="switch auth-form__switch">
-							<input type="checkbox" id="switch-bonus-program" class="switch__input" data-validation="required">
+							<input type="checkbox" id="switch-bonus-program" class="switch__input" data-validation="required" data-id="bonus-policy">
 							<div class="switch__group">
 								<span class="switch__title">Я ознакомлен и согласен с правилами действия <a href="#">Положения о бонусной программе лояльности «Аптечка»</a></span>
 								<span class="switch__icon"></span>
 							</div>
 						</label>
 						<label for="switch-personal-data" class="switch auth-form__switch">
-							<input type="checkbox" id="switch-personal-data" class="switch__input" data-validation="required">
+							<input type="checkbox" id="switch-personal-data" class="switch__input" data-validation="required" data-id="personal-data">
 							<div class="switch__group">
 								<span class="switch__title">Я подтверждаю согласие на обработку моих <a href="#">персональных данных</a></span>
 								<span class="switch__icon"></span>
@@ -239,7 +239,7 @@
 						<div class="auth-form__subtitle">Я согласен на получение сервисных уведомлений, информации о новых товарах и специальных предложениях:</div>
 						<div class="auth-form__checkboxes">
 							<label for="checkbox-notification-sms" class="square-checkbox auth-form__checkbox">
-								<input type="checkbox" id="checkbox-notification-sms" class="square-checkbox__input" checked disabled>
+								<input type="checkbox" id="checkbox-notification-sms" class="square-checkbox__input">
 								<div class="square-checkbox__group">
 									<span class="square-checkbox__icon"></span>
 									<span class="square-checkbox__title">SMS</span>
@@ -277,6 +277,8 @@
 					</div>
 					<button class="auth-form__btn btn">Продолжить</button>
 					<span class="validation-form-message">Не все обязательные поля заполнены верно</span>
+					<span class="validation-checkbox-message" data-id="bonus-policy">Вы не приняли приняли положение о бонусной программе</span>
+					<span class="validation-checkbox-message" data-id="personal-data">Вы не дали согласие на обработку персональных данных</span>
 					<span class="validation-form-message-server">В данный момент регистрация недоступна</span>
 				</form>
 			</div>
