@@ -71,7 +71,7 @@
 					<h3 class="auth__title">Анкета программы лояльности</h3>
 					<p class="auth__description">Это анкета участника программы лояльности. Данная анкета обязательна для регистрации в личном кабинете.</p>
 				</div>
-				<form action="#" class="auth-form auth__form validation-form">
+				<form action="#" class="auth-form auth__form validation-form" novalidate>
 					<div class="auth-form__switches">
 						<label for="switch-plastic-card" class="switch auth-form__switch js-input-visibility">
 							<input type="checkbox" id="switch-plastic-card" class="switch__input">
@@ -80,13 +80,15 @@
 								<span class="switch__icon"></span>
 							</div>
 						</label>
-						<div class="input-field auth-form__input hidden-block is--hidden">
-							<label for="auth-plastic-card" class="input-field__label input-field__label--desktop">Номер карты</label>
-							<div class="input-field__inner">
-								<input type="text" id="auth-plastic-card" class="input-field__input" placeholder="Номер вашей карты">
-								<label for="auth-plastic-card" class="input-field__label input-field__label--mobile">Номер карты</label>
+						<div class="auth-form__hidden-block is--hidden">
+							<div class="input-field auth-form__input ">
+								<label for="auth-plastic-card" class="input-field__label input-field__label--desktop">Номер карты</label>
+								<div class="input-field__inner">
+									<input type="text" id="auth-plastic-card" class="input-field__input" placeholder="Номер вашей карты">
+									<label for="auth-plastic-card" class="input-field__label input-field__label--mobile">Номер карты</label>
+								</div>
+								<span class="input-field__error">Карта не найдена</span>
 							</div>
-							<span class="input-field__error">Карта не найдена</span>
 						</div>
 					</div>
 					<hr>
@@ -115,27 +117,29 @@
 						<span class="input-field__error">Введите значение</span>
 					</div>
 					<div class="input-field auth-form__input">
-						<span class="input-field__label input-field__label--desktop">Пол</span>
-						<div class="input-field__select select-box" data-validation="required">
-							<div class="select-box__placeholder">
-								<span>Обязательное поле</span>
-								<svg>
-									<use xlink:href="img/sprite.svg#icon-caret"></use>
-								</svg>
-							</div>
-							<div class="select-box__container">
-								<div class="select-box__checkboxes">
-									<div class="select-box__checkbox">
-										<input type="radio" name="select-sex" class="select-box__input" id="select-sex-male">
-										<label for="select-sex-male" class="select-box__group">
-											<span class="select-box__title">Мужской</span>
-										</label>
-									</div>
-									<div class="square-checkbox select-box__checkbox">
-										<input type="radio" name="select-sex" class="select-box__input" id="select-sex-female">
-										<label for="select-sex-female" class="select-box__group">
-											<span class="select-box__title">Женский</span>
-										</label>
+						<div class="input-field__inner">
+							<span class="input-field__label">Пол</span>
+							<div class="input-field__select select-box" data-validation="required">
+								<div class="select-box__placeholder">
+									<span>Обязательное поле</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-caret"></use>
+									</svg>
+								</div>
+								<div class="select-box__container">
+									<div class="select-box__checkboxes">
+										<div class="select-box__checkbox">
+											<input type="radio" name="select-sex" class="select-box__input" id="select-sex-male">
+											<label for="select-sex-male" class="select-box__group">
+												<span class="select-box__title">Мужской</span>
+											</label>
+										</div>
+										<div class="square-checkbox select-box__checkbox">
+											<input type="radio" name="select-sex" class="select-box__input" id="select-sex-female">
+											<label for="select-sex-female" class="select-box__group">
+												<span class="select-box__title">Женский</span>
+											</label>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -154,7 +158,7 @@
 					<div class="input-field auth-form__input">
 						<label for="auth-email" class="input-field__label input-field__label--desktop">E-mail</label>
 						<div class="input-field__inner">
-							<input type="email" id="auth-email" class="input-field__input" placeholder="Небязательное поле">
+							<input type="text" id="auth-email" class="input-field__input" placeholder="Необязательное поле" data-type="email">
 							<label for="auth-email" class="input-field__label input-field__label--mobile">E-mail</label>
 						</div>
 						<span class="input-field__error">Введите значение</span>
@@ -186,35 +190,38 @@
 								<span class="switch__icon"></span>
 							</div>
 						</label>
-						<div class="auth-form__checkboxes hidden-block is--hidden">
-							<label for="checkbox-social-program-01" class="square-checkbox auth-form__checkbox">
-								<input type="checkbox" id="checkbox-social-program-01" class="square-checkbox__input">
-								<div class="square-checkbox__group">
-									<span class="square-checkbox__icon"></span>
-									<span class="square-checkbox__title">Удостоверение многодетной семьи</span>
-								</div>
-							</label>
-							<label for="checkbox-social-program-02" class="square-checkbox auth-form__checkbox">
-								<input type="checkbox" id="checkbox-social-program-02" class="square-checkbox__input">
-								<div class="square-checkbox__group">
-									<span class="square-checkbox__icon"></span>
-									<span class="square-checkbox__title">Удостоверение инвалидности</span>
-								</div>
-							</label>
-							<label for="checkbox-social-program-03" class="square-checkbox auth-form__checkbox">
-								<input type="checkbox" id="checkbox-social-program-03" class="square-checkbox__input">
-								<div class="square-checkbox__group">
-									<span class="square-checkbox__icon"></span>
-									<span class="square-checkbox__title">Пенсионное удостоверение</span>
-								</div>
-							</label>
-							<label for="checkbox-social-program-04" class="square-checkbox auth-form__checkbox">
-								<input type="checkbox" id="checkbox-social-program-04" class="square-checkbox__input">
-								<div class="square-checkbox__group">
-									<span class="square-checkbox__icon"></span>
-									<span class="square-checkbox__title">Удостоверение пострадавшего от катастрофы на Чернобыльской АЭС, других радиационных аварий</span>
-								</div>
-							</label>
+						<div class="auth-form__hidden-block is--hidden">
+							<div class="auth-form__checkboxes">
+								<label for="checkbox-social-program-01" class="square-checkbox auth-form__checkbox">
+									<input type="checkbox" id="checkbox-social-program-01" class="square-checkbox__input">
+									<div class="square-checkbox__group">
+										<span class="square-checkbox__icon"></span>
+										<span class="square-checkbox__title">Удостоверение многодетной семьи</span>
+									</div>
+								</label>
+								<label for="checkbox-social-program-02" class="square-checkbox auth-form__checkbox">
+									<input type="checkbox" id="checkbox-social-program-02" class="square-checkbox__input">
+									<div class="square-checkbox__group">
+										<span class="square-checkbox__icon"></span>
+										<span class="square-checkbox__title">Удостоверение инвалидности</span>
+									</div>
+								</label>
+								<label for="checkbox-social-program-03" class="square-checkbox auth-form__checkbox">
+									<input type="checkbox" id="checkbox-social-program-03" class="square-checkbox__input">
+									<div class="square-checkbox__group">
+										<span class="square-checkbox__icon"></span>
+										<span class="square-checkbox__title">Пенсионное удостоверение</span>
+									</div>
+								</label>
+								<label for="checkbox-social-program-04" class="square-checkbox auth-form__checkbox">
+									<input type="checkbox" id="checkbox-social-program-04" class="square-checkbox__input">
+									<div class="square-checkbox__group">
+										<span class="square-checkbox__icon"></span>
+										<span class="square-checkbox__title">Удостоверение пострадавшего от катастрофы на Чернобыльской АЭС, других радиационных аварий</span>
+									</div>
+								</label>
+							</div>
+							<span class="auth-form__error">Необходимо выбрать хотя бы один вариант</span>
 						</div>
 					</div>
 					<hr>
@@ -234,50 +241,51 @@
 							</div>
 						</label>
 					</div>
-					<hr>
-					<div class="auth-form__group">
-						<div class="auth-form__subtitle">Я согласен на получение сервисных уведомлений, информации о новых товарах и специальных предложениях:</div>
-						<div class="auth-form__checkboxes">
-							<label for="checkbox-notification-sms" class="square-checkbox auth-form__checkbox">
-								<input type="checkbox" id="checkbox-notification-sms" class="square-checkbox__input">
-								<div class="square-checkbox__group">
-									<span class="square-checkbox__icon"></span>
-									<span class="square-checkbox__title">SMS</span>
-								</div>
-							</label>
-							<label for="checkbox-notification-viber" class="square-checkbox auth-form__checkbox">
-								<input type="checkbox" id="checkbox-notification-viber" class="square-checkbox__input">
-								<div class="square-checkbox__group">
-									<span class="square-checkbox__icon"></span>
-									<span class="square-checkbox__title">Viber</span>
-								</div>
-							</label>
-							<label for="checkbox-notification-tg" class="square-checkbox auth-form__checkbox">
-								<input type="checkbox" id="checkbox-notification-tg" class="square-checkbox__input">
-								<div class="square-checkbox__group">
-									<span class="square-checkbox__icon"></span>
-									<span class="square-checkbox__title">Telegram</span>
-								</div>
-							</label>
-							<label for="checkbox-notification-email" class="square-checkbox auth-form__checkbox">
-								<input type="checkbox" id="checkbox-notification-email" class="square-checkbox__input">
-								<div class="square-checkbox__group">
-									<span class="square-checkbox__icon"></span>
-									<span class="square-checkbox__title">E-mail</span>
-								</div>
-							</label>
-							<label for="checkbox-notification-push" class="square-checkbox auth-form__checkbox">
-								<input type="checkbox" id="checkbox-notification-push" class="square-checkbox__input">
-								<div class="square-checkbox__group">
-									<span class="square-checkbox__icon"></span>
-									<span class="square-checkbox__title">Push</span>
-								</div>
-							</label>
+					<div class="auth-form__switches">
+						<label for="switch-service-notifications" class="switch auth-form__switch js-input-visibility">
+							<input type="checkbox" id="switch-service-notifications" class="switch__input">
+							<div class="switch__group">
+								<span class="switch__title">Я согласен на получение сервисных уведомлений, информации о новых товарах и специальных предложениях:</span>
+								<span class="switch__icon"></span>
+							</div>
+						</label>
+						<div class="auth-form__hidden-block is--hidden">
+							<div class="auth-form__checkboxes">
+								<label for="checkbox-notification-sms" class="square-checkbox auth-form__checkbox">
+									<input type="checkbox" id="checkbox-notification-sms" class="square-checkbox__input">
+									<div class="square-checkbox__group">
+										<span class="square-checkbox__icon"></span>
+										<span class="square-checkbox__title">SMS</span>
+									</div>
+								</label>
+								<label for="checkbox-notification-viber" class="square-checkbox auth-form__checkbox">
+									<input type="checkbox" id="checkbox-notification-viber" class="square-checkbox__input">
+									<div class="square-checkbox__group">
+										<span class="square-checkbox__icon"></span>
+										<span class="square-checkbox__title">Viber</span>
+									</div>
+								</label>
+								<label for="checkbox-notification-tg" class="square-checkbox auth-form__checkbox">
+									<input type="checkbox" id="checkbox-notification-tg" class="square-checkbox__input">
+									<div class="square-checkbox__group">
+										<span class="square-checkbox__icon"></span>
+										<span class="square-checkbox__title">Telegram</span>
+									</div>
+								</label>
+								<label for="checkbox-notification-email" class="square-checkbox auth-form__checkbox">
+									<input type="checkbox" id="checkbox-notification-email" class="square-checkbox__input">
+									<div class="square-checkbox__group">
+										<span class="square-checkbox__icon"></span>
+										<span class="square-checkbox__title">E-mail</span>
+									</div>
+								</label>
+							</div>
+							<span class="auth-form__error">Необходимо выбрать хотя бы один вариант</span>
 						</div>
 					</div>
 					<button class="auth-form__btn btn">Продолжить</button>
 					<span class="validation-form-message">Не все обязательные поля заполнены верно</span>
-					<span class="validation-checkbox-message" data-id="bonus-policy">Вы не приняли приняли положение о бонусной программе</span>
+					<span class="validation-checkbox-message" data-id="bonus-policy">Вы не приняли положение о бонусной программе</span>
 					<span class="validation-checkbox-message" data-id="personal-data">Вы не дали согласие на обработку персональных данных</span>
 					<span class="validation-form-message-server">В данный момент регистрация недоступна</span>
 				</form>
